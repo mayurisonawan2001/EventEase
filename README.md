@@ -1,8 +1,8 @@
-EventEase
-Overview
+EventEase :
+Overview :
 EventEase is a backend application built with Java and Spring Boot that manages event listings, ticket bookings, and user registrations. It provides RESTful APIs for seamless interaction between users and the system, including generating and validating unique booking codes for secure check-ins.
 
-Technologies Used
+Technologies Used :
 Java 17+
 Spring Boot
 Spring Data JPA (Hibernate)
@@ -11,43 +11,43 @@ REST API
 Maven
 Postman (for API testing)
 
-Features
+Features :
 Manage event creation and listings
 Allow users to book tickets for events
 Generate unique booking codes for each ticket
 Validate booking codes for secure check-ins
 Designed with scalability and maintainability in mind
 
-Project Setup
+Project Setup :
 Prerequisites
 Java 17 or above
 MySQL database server
 Maven
 Postman (optional, for API testing)
 
-Installation Steps
+Installation Steps :
 Clone the repository
-
 git clone https://github.com/yourusername/eventease.git
 cd eventease
-Create the MySQL database
 
+Create the MySQL database :
 CREATE DATABASE eventease_db;
+
 Configure database credentials
 Update src/main/resources/application.properties with your MySQL username and password:
 
-properties
+properties :
 spring.datasource.username=your_mysql_username  
 spring.datasource.password=your_mysql_password
-Build the project
 
+Build the project :
 mvn clean install
-Run the application
 
+Run the application :
 mvn spring-boot:run
 The application will start on http://localhost:8080
 
-API Endpoints
+API Endpoints :
 Endpoint	Method	Description	Request Body / Params
 /api/events	GET	List all events	None
 /api/events	POST	Create a new event	JSON body with event details
